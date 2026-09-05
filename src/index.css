@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 35% 97%;
+    --foreground: 191 38% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 191 38% 15%;
+    --primary: 190 38% 15%;
+    --primary-foreground: 40 44% 97%;
+    --secondary: 39 36% 91%;
+    --secondary-foreground: 191 38% 15%;
+    --muted: 38 22% 93%;
+    --muted-foreground: 190 10% 40%;
+    --accent: 13 48% 59%;
+    --accent-foreground: 0 0% 100%;
+    --border: 36 18% 84%;
+    --input: 36 18% 82%;
+    --ring: 13 48% 59%;
+    --radius: 0.9rem;
+  }
+
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background font-sans text-foreground antialiased; }
+  ::selection { background: hsl(var(--accent) / .25); }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .section-space { @apply py-20 md:py-28; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[.18em] text-accent; }
+  .paper-grid {
+    background-image: linear-gradient(hsl(var(--primary)/.045) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)/.045) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+}
+
+a, button { -webkit-tap-highlight-color: transparent; }
