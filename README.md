@@ -1,4 +1,4 @@
-# contadoras.ya
+# nexacontadoras
 
 Sitio institucional responsive para un estudio de tres contadoras argentinas. Incluye Inicio, Servicios, Certificaciones, Nosotras y Contacto.
 
@@ -19,7 +19,7 @@ npm run dev
 
 ## GitHub Pages
 
-Cada push a `main` ejecuta `.github/workflows/jekyll-gh-pages.yml`, compila el sitio con la base `/contadora_web/` y publica `dist/` en GitHub Pages. El build también genera un `404.html` para que las rutas de React funcionen al abrirlas directamente.
+Cada push a `main` ejecuta `.github/workflows/vite-gh-pages.yml`, compila el sitio con la base `/contadora_web/` y publica `dist/` en GitHub Pages. El build también genera un `404.html` para que las rutas de React funcionen al abrirlas directamente.
 
 ## Contenido editable
 

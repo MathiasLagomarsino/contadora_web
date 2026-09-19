@@ -19,7 +19,7 @@ export function AboutPage() {
       </PageHero>
       <section className="section-space">
         <div className="container grid items-center gap-12 lg:grid-cols-2">
-          <div className="relative overflow-hidden rounded-[2rem] bg-primary p-10 text-white md:p-14"><div className="absolute -right-20 -top-20 size-64 rounded-full border-[50px] border-white/5" /><p className="eyebrow">Nuestra idea</p><blockquote className="relative mt-6 font-display text-4xl leading-tight md:text-5xl">“La contabilidad funciona mejor cuando primero entendemos a la persona.”</blockquote><p className="relative mt-8 text-sm text-white/55">Equipo contadoras.ya</p></div>
+          <div className="relative overflow-hidden rounded-[2rem] bg-primary p-10 text-white md:p-14"><div className="absolute -right-20 -top-20 size-64 rounded-full border-[50px] border-white/5" /><p className="eyebrow">Nuestra idea</p><blockquote className="relative mt-6 font-display text-4xl leading-tight md:text-5xl">“La contabilidad funciona mejor cuando primero entendemos a la persona.”</blockquote><p className="relative mt-8 text-sm text-white/55">Equipo nexacontadoras</p></div>
           <SectionHeading eyebrow="Por qué existimos" title="Queríamos un estudio al que nosotras mismas elegiríamos." description="Uno que responda, explique y anticipe. Que use la tecnología para simplificar, sin volver impersonal el vínculo. Y que transforme la información contable en algo útil para decidir." />
         </div>
       </section>

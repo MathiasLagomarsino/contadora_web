@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className="container py-16">
         <div className="grid gap-12 border-b border-white/15 pb-14 md:grid-cols-[1.2fr_.7fr_1fr]">
           <div className="max-w-sm">
-            <div className="flex items-center gap-3"><BrandMark className="bg-white text-primary" /><span className="text-xl font-bold">contadoras.ya</span></div>
+            <div className="inline-flex rounded-md bg-white px-2 py-1.5"><BrandMark className="w-[13rem]" /></div>
             <p className="mt-5 text-sm leading-7 text-white/65">Un estudio contable hecho por tres profesionales que creen en explicar simple, acompañar de cerca y resolver a tiempo.</p>
           </div>
           <div>
@@ -28,7 +28,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="flex flex-col gap-3 pt-7 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} contadoras.ya. Todos los derechos reservados.</span>
+          <span>© {new Date().getFullYear()} nexacontadoras. Todos los derechos reservados.</span>
           <span>Sitio de demostración · Datos de contacto pendientes de confirmar</span>
         </div>
       </div>
