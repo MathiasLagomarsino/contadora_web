@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className="container py-16">
         <div className="grid gap-12 border-b border-white/15 pb-14 md:grid-cols-[1.2fr_.7fr_1fr]">
           <div className="max-w-sm">
-            <div className="inline-flex rounded-md bg-white px-2 py-1.5"><BrandMark className="w-[13rem]" /></div>
+            <div className="inline-flex rounded-md bg-background px-2 py-1.5"><BrandMark className="w-[13rem]" /></div>
             <p className="mt-5 text-sm leading-7 text-white/65">Un estudio contable hecho por tres profesionales que creen en explicar simple, acompañar de cerca y resolver a tiempo.</p>
           </div>
           <div>
