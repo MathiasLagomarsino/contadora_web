@@ -46,7 +46,7 @@ export function HomePage() {
               <div className="relative flex items-center justify-between"><span className="text-xs font-bold uppercase tracking-[.18em] text-white/55">Tu estudio, hoy</span><Sparkles className="size-5 text-accent" /></div>
               <div className="relative mt-12 rounded-[1.6rem] bg-white p-6 text-primary shadow-soft sm:p-7">
                 <div className="flex items-center justify-between"><span className="text-sm font-semibold">Estado general</span><span className="rounded-full bg-[#e5f5ee] px-3 py-1 text-xs font-bold text-[#267052]">Todo al día</span></div>
-                <div className="mt-7 flex items-end gap-2" aria-hidden="true">{[35,54,46,70,62,86,77,94].map((height, i) => <span key={i} className="flex-1 rounded-t-md bg-primary/10" style={{ height }}><span className="block h-1/2 rounded-t-md bg-accent/80" /></span>)}</div>
+                <div className="mt-7 flex items-end gap-2" aria-hidden="true">{[35, 54, 46, 70, 62, 86, 77, 94].map((height, i) => <span key={i} className="flex-1 rounded-t-md bg-primary/10" style={{ height }}><span className="block h-1/2 rounded-t-md bg-accent/80" /></span>)}</div>
                 <div className="mt-5 flex items-center justify-between border-t pt-4 text-xs text-muted-foreground"><span>Próximo vencimiento</span><strong className="text-primary">12 SEP</strong></div>
               </div>
               <div className="relative mt-5 grid grid-cols-2 gap-4">
@@ -61,7 +61,7 @@ export function HomePage() {
 
       <section className="border-y bg-white">
         <div className="container grid divide-y md:grid-cols-3 md:divide-x md:divide-y-0">
-          {[ ["3", "contadoras dedicadas"], ["100%", "gestión digital"], ["24 h", "respuesta inicial"] ].map(([value, label]) => <div key={label} className="flex items-baseline justify-center gap-3 py-7"><strong className="font-display text-3xl text-accent">{value}</strong><span className="text-sm text-muted-foreground">{label}</span></div>)}
+          {[["3", "contadoras dedicadas"], ["100%", "gestión digital"], ["24 h", "respuesta inicial"]].map(([value, label]) => <div key={label} className="flex items-baseline justify-center gap-3 py-7"><strong className="font-display text-3xl text-accent">{value}</strong><span className="text-sm text-muted-foreground">{label}</span></div>)}
         </div>
       </section>
 
@@ -92,7 +92,7 @@ export function HomePage() {
             <div className="absolute -bottom-24 -right-24 size-72 rounded-full bg-accent/25" />
             <p className="eyebrow">Tres miradas, un equipo</p>
             <div className="relative mt-16 flex items-end justify-center -space-x-5">
-              {["MC", "LV", "SO"].map((initials, i) => <div key={initials} className={`grid aspect-[3/4] w-[31%] place-items-center rounded-t-full border-[6px] border-secondary text-3xl font-display shadow-xl ${i === 1 ? "mb-12 bg-accent text-white" : "bg-primary text-white"}`}><span>{initials}</span></div>)}
+              {["YB", "VL", "MS"].map((initials, i) => <div key={initials} className={`grid aspect-[3/4] w-[31%] place-items-center rounded-t-full border-[6px] border-secondary text-3xl font-display shadow-xl ${i === 1 ? "mb-12 bg-accent text-white" : "bg-primary text-white"}`}><span>{initials}</span></div>)}
             </div>
             <div className="relative mt-8 rounded-2xl bg-white/80 p-5 text-center text-sm font-medium shadow-sm backdrop-blur">Distintas especialidades. La misma forma de acompañarte.</div>
           </div>
