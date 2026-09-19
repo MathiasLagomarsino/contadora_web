@@ -1,9 +1,8 @@
 export const site = {
   name: "nexacontadoras",
-  email: "hola@contadorasya.com.ar",
+  email: "contacto@nexacontadoras.com",
   phoneDisplay: "+54 9 11 3412-8318",
   phone: "5491134128318",
-  address: "Av. Corrientes 1234, CABA",
   instagram: "@contadoras.ya",
   linkedin: "contadoras-ya",
   instagramUrl: "https://instagram.com/contadoras.ya",

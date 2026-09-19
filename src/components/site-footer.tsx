@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail, MapPin, MessageCircle } from "lucide-react"
+import { Instagram, Linkedin, Mail, MessageCircle } from "lucide-react"
 import { Link } from "react-router-dom"
 import { BrandMark } from "@/components/brand-mark"
 import { Button } from "@/components/ui/button"
@@ -23,7 +23,6 @@ export function SiteFooter() {
             <p className="mb-4 text-sm font-bold uppercase tracking-[.16em] text-white/45">Contacto</p>
             <a href={`mailto:${site.email}`} className="flex items-center gap-3 hover:text-white"><Mail className="size-4" />{site.email}</a>
             <a href={whatsappUrl()} target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-white"><MessageCircle className="size-4" />{site.phoneDisplay}</a>
-            <p className="flex items-start gap-3"><MapPin className="mt-0.5 size-4 shrink-0" />{site.address}</p>
             <div className="flex gap-2 pt-2"><Button asChild size="icon" variant="secondary"><a href={site.instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram /></a></Button><Button asChild size="icon" variant="secondary"><a href={site.linkedinUrl} target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin /></a></Button></div>
           </div>
         </div>

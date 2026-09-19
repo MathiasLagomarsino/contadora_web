@@ -1,4 +1,4 @@
-import { Clock3, Mail, MapPin, MessageCircle } from "lucide-react"
+import { Clock3, Mail, MessageCircle } from "lucide-react"
 import { ContactForm } from "@/components/contact-form"
 import { PageHero } from "@/components/page-hero"
 import { Card, CardContent } from "@/components/ui/card"
@@ -13,9 +13,8 @@ export function ContactPage() {
           <div className="space-y-4">
             <Card className="shadow-none"><CardContent className="flex gap-4 p-5"><div className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary"><MessageCircle className="size-5" /></div><div><p className="text-sm font-semibold">WhatsApp</p><a className="mt-1 block text-sm text-muted-foreground hover:text-accent" href={whatsappUrl()} target="_blank" rel="noreferrer">{site.phoneDisplay}</a></div></CardContent></Card>
             <Card className="shadow-none"><CardContent className="flex gap-4 p-5"><div className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary"><Mail className="size-5" /></div><div><p className="text-sm font-semibold">Email</p><a className="mt-1 block text-sm text-muted-foreground hover:text-accent" href={`mailto:${site.email}`}>{site.email}</a></div></CardContent></Card>
-            <Card className="shadow-none"><CardContent className="flex gap-4 p-5"><div className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary"><MapPin className="size-5" /></div><div><p className="text-sm font-semibold">Estudio</p><p className="mt-1 text-sm text-muted-foreground">{site.address}</p></div></CardContent></Card>
             <Card className="shadow-none"><CardContent className="flex gap-4 p-5"><div className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary"><Clock3 className="size-5" /></div><div><p className="text-sm font-semibold">Horario</p><p className="mt-1 text-sm text-muted-foreground">Lun a vie · 9:00 a 18:00</p></div></CardContent></Card>
-            <div className="rounded-2xl bg-secondary/70 p-5 text-xs leading-5 text-muted-foreground">Los datos de email, domicilio, redes y horario son demostrativos. El WhatsApp fue provisto por el cliente.</div>
+            <div className="rounded-2xl bg-secondary/70 p-5 text-xs leading-5 text-muted-foreground">Los datos de redes y horario son demostrativos. El WhatsApp fue provisto por el cliente.</div>
           </div>
           <ContactForm />
         </div>

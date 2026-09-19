@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 const team = [
-  { initials: "MC", name: "Marina Costa", role: "Contadora pública", focus: "Impuestos & planificación", color: "bg-primary" },
-  { initials: "LV", name: "Lucía Vega", role: "Contadora pública", focus: "Sueldos & gestión", color: "bg-accent" },
-  { initials: "SO", name: "Sofía Ortiz", role: "Contadora pública", focus: "Sociedades & balances", color: "bg-[#647b76]" },
+  { initials: "YB", name: "Yanina Basile", role: "Contadora pública", focus: "Impuestos & planificación", color: "bg-primary" },
+  { initials: "VL", name: "Valeria Lagomarsino", role: "Contadora pública", focus: "Sueldos & gestión", color: "bg-accent" },
+  { initials: "MS", name: "Marina Sánchez", role: "Contadora pública", focus: "Sociedades & balances", color: "bg-[#647b76]" },
 ]
 
 export function AboutPage() {
