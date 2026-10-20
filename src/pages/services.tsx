@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 const services = [
-  { icon: ReceiptText, title: "Impuestos y monotributo", text: "Altas, recategorizaciones, declaraciones juradas y planificación para profesionales, comercios y prestadores de servicios.", items: ["Monotributo", "IVA y Ganancias", "Ingresos Brutos"] },
-  { icon: Users, title: "Sueldos y empleadores", text: "Administración laboral mensual con acompañamiento en cada alta, novedad y desvinculación.", items: ["Liquidación de sueldos", "Cargas sociales", "Altas y bajas"] },
+  { icon: ReceiptText, title: "Impuestos y monotributo", text: "Altas, recategorizaciones, declaraciones juradas y planificación para profesionales, comercios, emprendedores y prestadores de servicios.", items: ["Monotributo", "IVA y Ganancias", "Ingresos Brutos"] },
+  { icon: Users, title: "Sueldos y empleadores", text: "Gestión laboral mensual con acompañamiento en cada alta, novedad y desvinculación.", items: ["Liquidación de sueldos", "Cargas sociales", "Altas y bajas"] },
   { icon: Building2, title: "Sociedades", text: "Soporte contable y societario para empezar ordenado y sostener el cumplimiento en el tiempo.", items: ["Constitución", "Balances", "Presentaciones"] },
-  { icon: FileBadge2, title: "Certificaciones contables", text: "Documentación profesional para presentar ante bancos, inmobiliarias, registros y organismos.", items: ["Ingresos", "Origen de fondos", "Bienes"], featured: true },
-  { icon: Calculator, title: "Gestión para PyMEs", text: "Información contable útil para conocer márgenes, ordenar el flujo de fondos y decidir con más contexto.", items: ["Tableros", "Flujo de fondos", "Reportes"] },
-  { icon: Landmark, title: "Regularizaciones", text: "Revisión de deudas, planes de pago y puesta al día de situaciones fiscales pendientes.", items: ["Diagnóstico fiscal", "Moratorias", "Planes de pago"] },
+  { icon: FileBadge2, title: "Certificaciones contables", text: "Documentación profesional para presentar ante bancos, inmobiliarias, registros y organismos.", items: ["Ingresos", "Origen de fondos", "Bienes", "Otras certificaciones"], featured: true },
+  { icon: Calculator, title: "Gestión para emprendedores", text: "Información contable útil para conocer márgenes, ordenar tu negocio y decidir con más contexto.", items: ["Tableros", "Reportes", "Seguimiento integral"] },
+  { icon: Landmark, title: "Regularizaciones", text: "Revisión de deudas, planes de pago y puesta al día de situaciones fiscales pendientes.", items: ["Diagnóstico fiscal", "Presentaciones pendientes", "Planes de pago"] },
 ]
 
 export function ServicesPage() {
@@ -30,7 +30,7 @@ export function ServicesPage() {
       </section>
       <section className="section-space border-t bg-white">
         <div className="container grid items-center gap-12 lg:grid-cols-[.9fr_1.1fr]">
-          <div className="rounded-[2rem] bg-primary p-8 text-white md:p-12"><p className="eyebrow">Planes mensuales</p><h2 className="mt-5 font-display text-4xl leading-tight md:text-5xl">Una contadora que ya conoce tu historia.</h2><p className="mt-5 leading-7 text-white/65">El acompañamiento mensual evita empezar de cero en cada consulta. Seguimos tu actividad, anticipamos vencimientos y te avisamos lo que importa.</p></div>
+          <div className="rounded-[2rem] bg-primary p-8 text-white md:p-12"><h2 className="font-display text-4xl leading-tight md:text-5xl">Abonos mensuales</h2><p className="mt-5 leading-7 text-white/65">El acompañamiento mensual evita empezar de cero en cada consulta. Seguimos tu actividad, anticipamos vencimientos y te avisamos lo que importa.</p></div>
           <div className="space-y-5">{[ ["Independientes", "Para profesionales y prestadores que necesitan facturar, pagar impuestos y estar al día."], ["Emprendimientos", "Para equipos que empiezan a crecer y necesitan ordenar costos, cobros y obligaciones."], ["PyMEs", "Para empresas que buscan gestión contable, sueldos e información para decidir."] ].map(([title,text], i) => <div key={title} className="grid gap-4 border-b pb-5 sm:grid-cols-[48px_1fr]"><span className="font-display text-3xl text-accent">0{i+1}</span><div><h3 className="text-xl font-semibold">{title}</h3><p className="mt-2 text-sm leading-6 text-muted-foreground">{text}</p></div></div>)}</div>
         </div>
       </section>

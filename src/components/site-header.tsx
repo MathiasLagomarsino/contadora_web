@@ -16,8 +16,8 @@ const links = [
 
 function Logo() {
   return (
-    <Link to="/" className="flex items-center rounded-md bg-background px-1.5 py-1" aria-label="nexacontadoras — Inicio">
-      <BrandMark className="w-[9.75rem] sm:w-[10.5rem]" />
+    <Link to="/" className="flex items-center" aria-label="nexacontadoras — Inicio">
+      <BrandMark className="w-[9.75rem] contrast-125 mix-blend-multiply sm:w-[10.5rem]" />
     </Link>
   )
 }

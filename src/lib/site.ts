@@ -1,6 +1,6 @@
 export const site = {
   name: "nexacontadoras",
-  email: "contacto@nexacontadoras.com",
+  email: "nexacontadoras@gmail.com",
   phoneDisplay: "+54 9 11 3412-8318",
   phone: "5491134128318",
   instagram: "@contadoras.ya",

@@ -14,7 +14,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-muted hover:text-foreground",
         accent: "bg-accent text-accent-foreground shadow-sm hover:-translate-y-0.5 hover:bg-accent/90",
       },
-      size: { default: "h-11 px-5", sm: "h-9 px-4 text-xs", lg: "h-13 px-7 text-base", icon: "size-11" },
+      size: { default: "h-11 px-5", sm: "h-9 px-4 text-xs", lg: "h-[3.25rem] px-7 text-base", icon: "size-11" },
     },
     defaultVariants: { variant: "default", size: "default" },
   },

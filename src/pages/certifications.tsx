@@ -1,4 +1,4 @@
-import { AlertCircle, ArrowRight, BadgeCheck, Banknote, BriefcaseBusiness, Building, CalendarClock, Check, FileCheck2, Home, MessageCircle, ShieldCheck } from "lucide-react"
+import { AlertCircle, ArrowRight, BadgeCheck, Banknote, BriefcaseBusiness, Building, CalendarClock, FileCheck2, Home, MessageCircle, ShieldCheck } from "lucide-react"
 import { ContactForm } from "@/components/contact-form"
 import { SectionHeading } from "@/components/section-heading"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -43,14 +43,14 @@ export function CertificationsPage() {
           </div>
           <div className="relative mx-auto w-full max-w-md">
             <div className="absolute -inset-5 rotate-3 rounded-[2rem] border border-white/15" />
-            <Card className="relative border-0 shadow-2xl"><CardContent className="p-7 md:p-9"><div className="flex items-center justify-between"><div className="grid size-12 place-items-center rounded-2xl bg-accent/15"><FileCheck2 className="text-accent" /></div><span className="rounded-full bg-[#e5f5ee] px-3 py-1 text-xs font-bold text-[#267052]">Proceso simple</span></div><h2 className="mt-7 text-2xl font-semibold">¿Cómo empezamos?</h2><div className="mt-6 space-y-5">{["Nos contás para qué la necesitás", "Validamos requisitos y documentación", "Te confirmamos honorarios y plazo"].map((item, i) => <div key={item} className="flex gap-4"><span className="grid size-7 shrink-0 place-items-center rounded-full bg-primary font-display text-sm text-white">{i+1}</span><p className="text-sm leading-6 text-muted-foreground">{item}</p></div>)}</div><div className="mt-7 rounded-xl bg-muted p-4 text-sm font-medium">Sin compromiso: evaluamos tu caso antes de comenzar.</div></CardContent></Card>
+            <Card className="relative border-0 shadow-2xl"><CardContent className="p-7 md:p-9"><div className="flex items-center justify-between"><div className="grid size-12 place-items-center rounded-2xl bg-accent/15"><FileCheck2 className="text-accent" /></div></div><h2 className="mt-7 text-2xl font-semibold">¿Cómo empezamos?</h2><div className="mt-6 space-y-5">{["Nos contás para qué la necesitás", "Validamos requisitos y documentación", "Te confirmamos honorarios y plazo"].map((item, i) => <div key={item} className="flex gap-4"><span className="grid size-7 shrink-0 place-items-center rounded-full bg-primary font-display text-sm text-white">{i+1}</span><p className="text-sm leading-6 text-muted-foreground">{item}</p></div>)}</div></CardContent></Card>
           </div>
         </div>
       </section>
 
       <section className="section-space">
         <div className="container">
-          <SectionHeading eyebrow="Qué certificamos" title="Tres soluciones, un proceso claro." description="Identificamos el informe que corresponde según el destino y la documentación disponible." align="center" />
+          <SectionHeading title="Qué certificamos" align="center" />
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {certificationTypes.map(item => <Card key={item.title} className="shadow-none"><CardContent className="p-7"><div className="grid size-12 place-items-center rounded-2xl bg-secondary"><item.icon className="size-5" /></div><h3 className="mt-7 text-xl font-semibold">{item.title}</h3><p className="mt-3 text-sm leading-7 text-muted-foreground">{item.text}</p></CardContent></Card>)}
           </div>
@@ -60,7 +60,7 @@ export function CertificationsPage() {
 
       <section className="section-space border-y bg-white">
         <div className="container">
-          <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between"><SectionHeading eyebrow="Honorarios orientativos" title="Sabé el punto de partida." description="Valores de referencia. El presupuesto final se confirma después de revisar el caso y la documentación." /><p className="rounded-full bg-muted px-4 py-2 text-xs font-bold text-muted-foreground">Válidos hasta 30/09/2026</p></div>
+          <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between"><SectionHeading eyebrow="Honorarios orientativos" title="Sabé el punto de partida." description="Valores de referencia. El presupuesto final se confirma después de revisar el caso y la documentación." /></div>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {prices.map(item => <Card key={item.title} className="shadow-none"><CardContent className="p-6"><item.icon className="size-5 text-accent" /><h3 className="mt-6 min-h-12 font-semibold leading-6">{item.title}</h3><p className="mt-6 text-xs uppercase tracking-wide text-muted-foreground">Desde</p><p className="mt-1 font-display text-3xl">{item.price}</p><div className="my-5 h-px bg-border" /><p className="text-xs leading-5 text-muted-foreground">Legalización del Consejo Profesional no incluida. Se calcula según el monto certificado.</p></CardContent></Card>)}
           </div>
@@ -69,7 +69,7 @@ export function CertificationsPage() {
 
       <section className="section-space">
         <div className="container grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
-          <SectionHeading eyebrow="Preguntas frecuentes" title="Antes de empezar, despejemos las dudas." description="Si tu situación no aparece acá, escribinos. La primera orientación es sin compromiso." />
+          <SectionHeading eyebrow="Preguntas frecuentes" title="Antes de empezar, despejemos las dudas." description="Si tu situación no aparece acá, escribinos." />
           <Accordion type="single" collapsible className="border-t">
             {faqs.map(([q,a], i) => <AccordionItem value={`item-${i}`} key={q}><AccordionTrigger>{q}</AccordionTrigger><AccordionContent>{a}</AccordionContent></AccordionItem>)}
           </Accordion>
@@ -78,7 +78,7 @@ export function CertificationsPage() {
 
       <section id="solicitar" className="section-space bg-secondary/55 scroll-mt-20">
         <div className="container grid items-start gap-12 lg:grid-cols-[.8fr_1.2fr]">
-          <div className="lg:sticky lg:top-28"><SectionHeading eyebrow="Solicitar certificación" title="Contanos qué necesitás presentar." description="Con estos datos podemos orientarte sobre el tipo de certificación, documentación, honorarios y plazo estimado." /><div className="mt-8 space-y-4">{["Evaluación inicial sin compromiso", "Lista de documentación personalizada", "Seguimiento directo con una contadora"].map(item => <p key={item} className="flex items-center gap-3 text-sm font-medium"><span className="grid size-6 place-items-center rounded-full bg-accent text-white"><Check className="size-3.5" /></span>{item}</p>)}</div></div>
+          <div className="lg:sticky lg:top-28"><SectionHeading eyebrow="Solicitar certificación" title="Contanos qué necesitás presentar." description="Con estos datos podemos orientarte sobre el tipo de certificación, documentación, honorarios y plazo estimado." /></div>
           <ContactForm certification />
         </div>
       </section>
